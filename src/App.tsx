@@ -75,10 +75,8 @@ const App = () => {
         try {
             await fetch(fullUrl, {
                 method: 'GET',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                }
+                mode: 'no-cors'
+                // Removed headers to avoid preflight options request
             });
 
             setTimeout(() => {
