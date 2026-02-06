@@ -67,6 +67,7 @@ const App = () => {
         });
 
         const fullUrl = `${AUTOMATION_CONFIG.scriptUrl}?${params.toString()}`;
+        console.log("Submitting to Google Script:", fullUrl);
 
         try {
             await fetch(fullUrl, {
