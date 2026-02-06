@@ -69,7 +69,10 @@ const App = () => {
         // Add timestamp to prevent caching
         params.append('_t', new Date().getTime().toString());
 
-        const fullUrl = `${AUTOMATION_CONFIG.scriptUrl}?${params.toString()}`;
+        // TRIM THE URL TO REMOVE ACCIDENTAL SPACES
+        const baseUrl = AUTOMATION_CONFIG.scriptUrl.trim();
+        const fullUrl = `${baseUrl}?${params.toString()}`;
+
         console.log("Submitting to Google Script:", fullUrl);
 
         try {
