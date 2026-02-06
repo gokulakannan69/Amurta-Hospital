@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run build",
+  "buildOutputDirectory": "dist",
+  "nodeVersion": "22",
+  "compatibilityDate": "2026-02-06"
+}

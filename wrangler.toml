@@ -1,36 +1,18 @@
 name = "amurta-hospital"
 type = "javascript"
-account_id = ""
-workers_dev = true
-route = ""
-zone_id = ""
-main = "dist/index.html"
-
-[env.production]
-name = "amurta-hospital-prod"
-workers_dev = false
 
 [build]
-command = "npm install && npm run build"
+command = "npm run build"
 cwd = "./"
-watch_paths = ["src/**/*.tsx", "src/**/*.ts", "src/**/*.css"]
 
 [build.upload]
-format = "service-worker"
+format = "modules"
 
 [[build.upload.rules]]
 type = "CompiledContentType"
 globs = ["**/*.wasm"]
 fallthrough = true
 
-[[build.upload.rules]]
-type = "Text"
-globs = ["**/*.txt"]
-fallthrough = true
-
-[env.production.build]
-command = "npm install && npm run build"
-
-[deployment]
-service_name = "amurta-hospital"
+[env.production]
+name = "amurta-hospital-prod"
 
