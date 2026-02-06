@@ -66,13 +66,19 @@ const App = () => {
             time: bookingData.time
         });
 
+        // Add timestamp to prevent caching
+        params.append('_t', new Date().getTime().toString());
+
         const fullUrl = `${AUTOMATION_CONFIG.scriptUrl}?${params.toString()}`;
         console.log("Submitting to Google Script:", fullUrl);
 
         try {
             await fetch(fullUrl, {
                 method: 'GET',
-                mode: 'no-cors'
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                }
             });
 
             setTimeout(() => {
