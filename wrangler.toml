@@ -1,12 +1,14 @@
-name = "amruta-ayurveda"
+name = "amurta-hospital"
 type = "javascript"
 account_id = ""
 workers_dev = true
 route = ""
 zone_id = ""
+main = "dist/index.html"
 
 [env.production]
-name = "amruta-ayurveda-prod"
+name = "amurta-hospital-prod"
+workers_dev = false
 
 [build]
 command = "npm install && npm run build"
@@ -30,5 +32,5 @@ fallthrough = true
 command = "npm install && npm run build"
 
 [deployment]
-service_name = "amruta-ayurveda"
+service_name = "amurta-hospital"
 
