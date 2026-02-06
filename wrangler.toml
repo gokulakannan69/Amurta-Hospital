@@ -1,0 +1,34 @@
+name = "amruta-ayurveda"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[env.production]
+name = "amruta-ayurveda-prod"
+
+[build]
+command = "npm install && npm run build"
+cwd = "./"
+watch_paths = ["src/**/*.tsx", "src/**/*.ts", "src/**/*.css"]
+
+[build.upload]
+format = "service-worker"
+
+[[build.upload.rules]]
+type = "CompiledContentType"
+globs = ["**/*.wasm"]
+fallthrough = true
+
+[[build.upload.rules]]
+type = "Text"
+globs = ["**/*.txt"]
+fallthrough = true
+
+[env.production.build]
+command = "npm install && npm run build"
+
+[deployment]
+service_name = "amruta-ayurveda"
+

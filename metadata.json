@@ -1,0 +1,7 @@
+{
+  "description": "Digital platform for Amruta Ayurveda Hospital - Specialized in Nadi Vaidya & Panchakarma.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "name": "Amruta Ayurveda"
+}
