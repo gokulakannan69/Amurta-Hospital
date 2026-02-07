@@ -382,7 +382,7 @@ const App = () => {
                                             <div className="space-y-10 animate-in slide-in-from-right-8">
                                                 <div className="space-y-4">
                                                     <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t.visitDate}</p>
-                                                    <input type="date" className="w-full p-7 rounded-[2rem] border-2 border-slate-100 font-black text-xl focus:ring-4 focus:ring-blue-50 outline-none transition-all" onChange={(e) => setBookingData(prev => ({ ...prev, date: e.target.value }))} />
+                                                    <input type="date" className="w-full p-4 md:p-7 rounded-[2rem] border-2 border-slate-100 font-bold md:font-black text-lg md:text-xl focus:ring-4 focus:ring-blue-50 outline-none transition-all" onChange={(e) => setBookingData(prev => ({ ...prev, date: e.target.value }))} />
                                                 </div>
                                                 <div className="space-y-4">
                                                     <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t.timeSlot}</p>
