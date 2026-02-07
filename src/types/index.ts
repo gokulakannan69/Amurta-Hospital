@@ -56,6 +56,13 @@ export interface Translation {
   registrationError: string;
   morning: string;
   evening: string;
+  contactUs: string;
+  getDirections: string;
+  callNow: string;
+  viewSource: string;
+  location: string;
+  phone: string;
+  github: string;
 }
 
 export interface Treatment {

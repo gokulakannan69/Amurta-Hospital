@@ -45,7 +45,14 @@ export const TRANSLATIONS: Record<'en' | 'tm', Translation> = {
         recordingData: "Recording Data...",
         registrationError: "Registration Error. Please check connectivity.",
         morning: "Morning (9AM-1PM)",
-        evening: "Evening (5PM-8PM)"
+        evening: "Evening (5PM-8PM)",
+        contactUs: "Contact Us",
+        getDirections: "Get Directions",
+        callNow: "Call Now",
+        viewSource: "View Source",
+        location: "Location",
+        phone: "Phone",
+        github: "GitHub"
     },
     tm: {
         hospitalName: "அம்ருதா",
@@ -91,6 +98,13 @@ export const TRANSLATIONS: Record<'en' | 'tm', Translation> = {
         recordingData: "பதிவு செய்யப்படுகிறது...",
         registrationError: "பதிவு செய்வதில் பிழை. இணைய இணைப்பைச் சரிபார்க்கவும்.",
         morning: "காலை (9AM-1PM)",
-        evening: "மாலை (5PM-8PM)"
+        evening: "மாலை (5PM-8PM)",
+        contactUs: "தொடர்பு கொள்ள",
+        getDirections: "வழிசெலுத்து",
+        callNow: "அழைக்கவும்",
+        viewSource: "மூலத்தைக் காண்க",
+        location: "இடம்",
+        phone: "தொலைபேசி",
+        github: "கிட்ஹப்"
     }
 };
